@@ -1,0 +1,21 @@
+{
+    "name": "Unity.PlatformToolkit.Switch.Editor",
+    "rootNamespace": "Unity.PlatformToolkit.nintendoswitch.Editor",
+    "references": [
+        "Unity.PlatformToolkit.Editor",
+        "Unity.PlatformToolkit",
+        "Unity.PlatformToolkit.Switch",
+        "com.nintendo.sdkplugin"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

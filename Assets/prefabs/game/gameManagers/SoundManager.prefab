@@ -1,0 +1,604 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &642155422778860318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932076452259108222}
+  - component: {fileID: 7003273344931679121}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1932076452259108222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642155422778860318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7003273344931679121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642155422778860318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad22e72a9b441649bd7fea61a4ee6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fFadeTime: 1
+  m_aoWeatherSFX:
+  - m_eWeather: 1
+    m_oSound: {fileID: 3165550262842481192, guid: e206c45d1a835da49a7e2dcb527883f1,
+      type: 3}
+  - m_eWeather: 2
+    m_oSound: {fileID: 279152611511680350, guid: 0f2daccd20d53c0458547ce049b8911d,
+      type: 3}
+  - m_eWeather: 3
+    m_oSound: {fileID: 8856795659169540455, guid: 4e2e99157d410694483fee4bfb964829,
+      type: 3}
+  m_aoSongsRelaxingBiome:
+  - m_eBiome: 1
+    m_oSong: {fileID: 8812540182614680269, guid: db759d3f114689f48b77f61481f48090,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 3
+    m_oSong: {fileID: 5720201697576794930, guid: 9175cf8376e17a746b33c416f429e350,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 2
+    m_oSong: {fileID: 5394581785402857800, guid: 357347b08fd6a1b48a528d423fb5ed8f,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 6
+    m_oSong: {fileID: 8654767352750238860, guid: 6afa9dd8c88c98041a16d5b78a2b73e2,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 5
+    m_oSong: {fileID: 3869092779291081006, guid: 01b149da47a1b6c46a8d48e7855eff5d,
+      type: 3}
+    m_aoSongs: []
+  m_aoSongsCombatBiome:
+  - m_eBiome: 1
+    m_oSong: {fileID: 2698314441967381548, guid: 8099ede072c1c4e418fcf70408dd1bb8,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 3
+    m_oSong: {fileID: 3332006583057557712, guid: efe1015d7730b824bb3271a17d459e80,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 2
+    m_oSong: {fileID: 5406747470686013687, guid: 6b22350e225b7204fa5d4b3dd0713803,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 5
+    m_oSong: {fileID: 4468496277603362257, guid: 26c2c377d4480d549b148aa1c4ad2e8f,
+      type: 3}
+    m_aoSongs: []
+  - m_eBiome: 6
+    m_oSong: {fileID: 8654767352750238860, guid: b6c336db2c4540841a9b53271328b9e7,
+      type: 3}
+    m_aoSongs: []
+  m_aoSongsAmbientalsBiome:
+  - m_eBiome: 1
+    m_oSong: {fileID: 0}
+    m_aoSongs:
+    - m_eDaytime: 3
+      m_oSong: {fileID: 1931007935513783412, guid: 466abb242b86635479f1027e10e3ba68,
+        type: 3}
+    - m_eDaytime: 12
+      m_oSong: {fileID: 7339028240831071144, guid: 8d91b899fbb4de94b82d8183f997f662,
+        type: 3}
+  - m_eBiome: 2
+    m_oSong: {fileID: 0}
+    m_aoSongs:
+    - m_eDaytime: 3
+      m_oSong: {fileID: 1049352945175167419, guid: 500346579ac369e49bfb78e51a328e90,
+        type: 3}
+    - m_eDaytime: 12
+      m_oSong: {fileID: 2066179675383581659, guid: 369d22e7df2fed3419f82d6d4cc1f7fd,
+        type: 3}
+  - m_eBiome: 3
+    m_oSong: {fileID: 0}
+    m_aoSongs:
+    - m_eDaytime: 3
+      m_oSong: {fileID: 1424442955309495497, guid: 889620d4cd1d7314ebb8e46b70e524cd,
+        type: 3}
+    - m_eDaytime: 12
+      m_oSong: {fileID: 276960807037563410, guid: 4efcc74fb31bf544685ffff2c696a8cc,
+        type: 3}
+  - m_eBiome: 5
+    m_oSong: {fileID: 0}
+    m_aoSongs:
+    - m_eDaytime: 3
+      m_oSong: {fileID: 193473936692879541, guid: 60369a07a2acb9042a603d891a98bbd7,
+        type: 3}
+    - m_eDaytime: 12
+      m_oSong: {fileID: 5004241179119089276, guid: 8ddb709a7c27fb44d98e782c075a8d1f,
+        type: 3}
+  - m_eBiome: 6
+    m_oSong: {fileID: 6365534944106481013, guid: 24fd5e339066f634da5e885534cc83c7,
+      type: 3}
+    m_aoSongs: []
+  m_oPadSong: {fileID: 6303184715078342636, guid: 54fd83b401c89084ca24f2d3db2e041f,
+    type: 3}
+  m_oWinSong: {fileID: 1030975510490918176, guid: c2dff91d5d258a04bbba1eb656c3cadf,
+    type: 3}
+  m_oDefeatSong: {fileID: 9014539050040511414, guid: 062e45ba0c3caf443a455721bf1886df,
+    type: 3}
+  m_oMainMenuSong: {fileID: 428369690466555425, guid: 00a38ffdb3b1e6e47ab6d9a48265f0d5,
+    type: 3}
+  m_oMapSong: {fileID: 8829646438604980194, guid: b3e55ec7329f1f144b0c6a7082009d01,
+    type: 3}
+  m_oMapHiddenNodeAppear: {fileID: 6856436968720587815, guid: 2914c93495ac6b04e84208d8ecebeae4,
+    type: 3}
+  m_oCampfireSong: {fileID: 1646074933104095174, guid: 7fbd184701dcab44f9995d03e5ae8e26,
+    type: 3}
+  m_sConsumeWoodSound: {fileID: 5496518564320570138, guid: 3038138510327094ebda560c4077b3a6,
+    type: 3}
+  m_sConsumeFoodSound: {fileID: 5496518564320570138, guid: 0a71d8ce2be037647979766d1102353f,
+    type: 3}
+  m_oDarkEventSound: {fileID: 5918197664808256016, guid: d791567654e6c054c917dad45360e52b,
+    type: 3}
+  m_oEquipSound: {fileID: 7303174072654234648, guid: d9ea845cba695b147b52e01842081369,
+    type: 3}
+  m_oUnEquipSound: {fileID: 3375985998952839314, guid: 8f7fc6096f464494ba886e54d935c618,
+    type: 3}
+  m_aoResourceSFXs:
+  - m_eResource: 2
+    m_oResourceSound: {fileID: 3065073162052614682, guid: d9ad964ef118c8445b3df0981d624256,
+      type: 3}
+  - m_eResource: 4
+    m_oResourceSound: {fileID: 1665716529195354634, guid: 4ad0579af5f603248aa3ebcaefeb10ce,
+      type: 3}
+  - m_eResource: 8
+    m_oResourceSound: {fileID: 5095983729219930235, guid: bfc9209032546784daf8ee459324d654,
+      type: 3}
+  - m_eResource: 16
+    m_oResourceSound: {fileID: 3837599888303646510, guid: 575eec5f4b5e29f4f86495024b778b80,
+      type: 3}
+  - m_eResource: 32
+    m_oResourceSound: {fileID: 6669872642214475132, guid: 1f4f2fdc0f0be8f448ed02f9a7874852,
+      type: 3}
+  - m_eResource: 64
+    m_oResourceSound: {fileID: 6875846976736977804, guid: f828b189da9e80749b01cd2d97fa3ef8,
+      type: 3}
+  - m_eResource: 4096
+    m_oResourceSound: {fileID: 2724530072501662034, guid: f3064fcfb59e4564780f3702cd58a30a,
+      type: 3}
+  m_aoConsumeItemSFXs:
+  - m_eResource: 16384
+    m_oResourceSound: {fileID: 2951571711608226596, guid: 7dde51f9777397c49a4d5b4c38ba745f,
+      type: 3}
+  - m_eResource: 65536
+    m_oResourceSound: {fileID: 2951571711608226596, guid: 7dde51f9777397c49a4d5b4c38ba745f,
+      type: 3}
+  - m_eResource: 524288
+    m_oResourceSound: {fileID: 2951571711608226596, guid: 7dde51f9777397c49a4d5b4c38ba745f,
+      type: 3}
+  - m_eResource: 262144
+    m_oResourceSound: {fileID: 2951571711608226596, guid: 7dde51f9777397c49a4d5b4c38ba745f,
+      type: 3}
+  - m_eResource: 1048576
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  - m_eResource: 2097152
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  - m_eResource: 4194304
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  - m_eResource: 16777216
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  - m_eResource: 8388608
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  - m_eResource: 33554432
+    m_oResourceSound: {fileID: 2068212402689672908, guid: de86a16c3ad9b954b9222760e2c703e4,
+      type: 3}
+  m_oReleaseCharacterSound: {fileID: 2141871924126527180, guid: 73595ea1b2e55a94b8a63635134e4761,
+    type: 3}
+  m_oLootWindowAppearSound: {fileID: 303404782469611421, guid: 35b8e855a306d164180e97e98e8fd492,
+    type: 3}
+  m_oDodgeSound: {fileID: 2292766105488638619, guid: a0d57101807796946a01df3e4b695705,
+    type: 3}
+  m_oMissSound: {fileID: 2922055880192487684, guid: 107cb5bf00c774d4aa34cfadc627a58d,
+    type: 3}
+  m_oShredSound: {fileID: 1241459035303913235, guid: 6564d060fe839884b8f4336c96760ea6,
+    type: 3}
+  m_oSkillError: {fileID: 4797564365760293726, guid: 3ef8a47b0c1a4fa4fa3da1d06f29b9f2,
+    type: 3}
+  m_oGlobalError: {fileID: 545743098797186453, guid: 7f60812eb459e4646a9c51555095f249,
+    type: 3}
+  m_aoHitSFXs:
+  - m_eHitType: 0
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 1611618601564857912, guid: e0b11b2b11c34ea4395f77dabcfd27ba,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 1611618601564857912, guid: e0b11b2b11c34ea4395f77dabcfd27ba,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 4747208498511262070, guid: 678791bf8c3769746afd48609b576692,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 4747208498511262070, guid: 678791bf8c3769746afd48609b576692,
+        type: 3}
+  - m_eHitType: 1
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 3020707290360321344, guid: eec1053568384e448b1e44becc47de76,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 3020707290360321344, guid: eec1053568384e448b1e44becc47de76,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 7437218090463862759, guid: 3930f5257445a5b48abdf686a2e27d85,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 7437218090463862759, guid: 3930f5257445a5b48abdf686a2e27d85,
+        type: 3}
+  - m_eHitType: 2
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 8152733244888846677, guid: df16134e52a7d84428703c1968dd213a,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 8152733244888846677, guid: df16134e52a7d84428703c1968dd213a,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 2145100380546288801, guid: f31a0d92bf986224d9369567e880cc05,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 2145100380546288801, guid: f31a0d92bf986224d9369567e880cc05,
+        type: 3}
+  - m_eHitType: 3
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 5728667665875468766, guid: c426699808344d44882af3af862357b8,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 5728667665875468766, guid: c426699808344d44882af3af862357b8,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 7681050204221316389, guid: b40d315b3f1e4464fbf9afc128bbc17f,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 7681050204221316389, guid: b40d315b3f1e4464fbf9afc128bbc17f,
+        type: 3}
+  - m_eHitType: 4
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 6835283011302494575, guid: 5e50561277d3d2a4696b5d111f3b6ace,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 6835283011302494575, guid: 5e50561277d3d2a4696b5d111f3b6ace,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 9180349239215097667, guid: 2ab4a3f9c663f3f45ba8269e0c1dab91,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 9180349239215097667, guid: 2ab4a3f9c663f3f45ba8269e0c1dab91,
+        type: 3}
+  m_aoHitImpactSFXs:
+  - m_eHitType: 4
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 7066118710530620896, guid: 501ca1ba40f5ab945b1f9d940196677f,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 1353286036459995648, guid: 1bc112952717ab241a248d973a794f7e,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 1724700854501906240, guid: bb5f65a2c126a63498c0bb619a246dc0,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 398639367381874310, guid: e64e174c63c8ff54fb2411c3e60cbaf9,
+        type: 3}
+  - m_eHitType: 0
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 6417634408446507567, guid: fcd7eefdca552de40870ba550b62f8d4,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 8984493953625655624, guid: 6b0547227fb71e34194dac7e33767a64,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 2777281912518525847, guid: 95ded736ccbbb30499f270003fc67a54,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 3011730883623796207, guid: 088257d704eefa346a8163e0e35076dd,
+        type: 3}
+  - m_eHitType: 1
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 6544950656882185981, guid: 41b72347cd703db468d0a3d978c314c8,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 5435864385484923401, guid: 80431816e39d9b840871bdbf4ddbe634,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 9181998827223259255, guid: f73e933863311034a87e060ce91ff7e7,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 1181038269561330197, guid: 65fd2a097e9874e4c9416aa85c35278b,
+        type: 3}
+  - m_eHitType: 2
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 6856481491498401132, guid: 2a28e72117c789540aef9a6d96aff6b7,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 7626853790896807550, guid: 4bd4ef43dd8ebc94db3bbd5ec827aad3,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 6844511551729152911, guid: da5412f62567ca443a5185d8298f1825,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 962610275648994717, guid: 3c0a577dd7fd5cf4194a67ca4a97187d,
+        type: 3}
+  - m_eHitType: 3
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 676581129436962080, guid: 290ba0c92aa8d864cae645bd2675d43f,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 6449145976883617028, guid: 1d65a4bfc4f88054c8e53ed1f723fc27,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 8417484679769026333, guid: cfc38922528b8fc44ba4c9afc55895e6,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 4844635484790648927, guid: 31c9673abfb991543a02098842ac6802,
+        type: 3}
+  - m_eHitType: 5
+    m_aoHitFXSounds:
+    - m_vDamageDealt: {x: 1, y: 3}
+      m_oHitFXSound: {fileID: 8902211332748599184, guid: 2fbd92dcd31e7ae488cbb98c9e88ffa5,
+        type: 3}
+    - m_vDamageDealt: {x: 4, y: 7}
+      m_oHitFXSound: {fileID: 8433241272154097990, guid: 2fd3b9003bd2f4a4d9a4303b10a045ae,
+        type: 3}
+    - m_vDamageDealt: {x: 8, y: 13}
+      m_oHitFXSound: {fileID: 6474185392573517404, guid: ccb489de1db74c446a1ba0fbaf2ed82f,
+        type: 3}
+    - m_vDamageDealt: {x: 14, y: 9999999}
+      m_oHitFXSound: {fileID: 6234527004012758274, guid: b08a555405e704b4e81ca51be134b3d8,
+        type: 3}
+  m_oHitBuffProjectile: {fileID: 152649834399769849, guid: 59c252417088e974f9fa232abfe7d730,
+    type: 3}
+  m_aoStatusSFXs:
+  - m_eStatus: 0
+    m_oStatusSound: {fileID: 6147423034036133907, guid: d7c897131514c72409cfaa11c91383af,
+      type: 3}
+  - m_eStatus: 3
+    m_oStatusSound: {fileID: 5067518649218459798, guid: 9104b997af4ec8d449b8d0e14cf9cb10,
+      type: 3}
+  m_oGeneralStatusBuff: {fileID: 5510627151128119212, guid: 6af9790234c857d428e7d37fe6ecab4d,
+    type: 3}
+  m_oGeneralStatusDebuff: {fileID: 2673110768236587607, guid: fe26325461f6d9144909350297fa5a52,
+    type: 3}
+  m_aoFootstepsByEntity:
+  - m_eEntity: 5
+    m_aoEntityFallbackSounds: []
+    m_oDefaultFallbackSound: {fileID: 6745867373492262132, guid: a31ab74949a7f5f4d8d68aa8a9f3db07,
+      type: 3}
+    m_aoSizeSounds:
+    - m_eSize: 2
+      m_oDefaultFallbackSound: {fileID: 8327602723886197311, guid: 5783ccc6ec178554d9e89d3f91688abe,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 8327602723886197311, guid: 5783ccc6ec178554d9e89d3f91688abe,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 7805336659456120039, guid: 884aeb87ab8712941887feb4b8800258,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 7035282381178568704, guid: 101ad02e60f17b54b9730d54e39e0ad6,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 1324503241447286574, guid: 653fde9bb2d987540ad7afaf858ad5a4,
+          type: 3}
+  - m_eEntity: 4
+    m_aoEntityFallbackSounds: []
+    m_oDefaultFallbackSound: {fileID: 5060177819161545182, guid: 5c31399e04b8bfa4bb010bb21c75655b,
+      type: 3}
+    m_aoSizeSounds:
+    - m_eSize: 1
+      m_oDefaultFallbackSound: {fileID: 5060177819161545182, guid: 5c31399e04b8bfa4bb010bb21c75655b,
+        type: 3}
+      m_aoSurfaceSounds: []
+    - m_eSize: 2
+      m_oDefaultFallbackSound: {fileID: 8923896743460552305, guid: 64e0cc6b06fa6e049b361e9ba0c5c1e8,
+        type: 3}
+      m_aoSurfaceSounds: []
+  - m_eEntity: 1
+    m_aoEntityFallbackSounds:
+    - m_eSurface: 1
+      m_oSound: {fileID: 5782212803078552131, guid: 9c70d780c01d7364c97719b3ea6fbb0c,
+        type: 3}
+    - m_eSurface: 2
+      m_oSound: {fileID: 4018216236876909898, guid: 1f51f9097e9e8d844a3d581603712ca7,
+        type: 3}
+    - m_eSurface: 3
+      m_oSound: {fileID: 8577736372778242338, guid: 241c97964e485b342a07a3b7c8c93072,
+        type: 3}
+    - m_eSurface: 4
+      m_oSound: {fileID: 42254163270038316, guid: cf3a815d6b551ad41b3b95ebf8288c96,
+        type: 3}
+    m_oDefaultFallbackSound: {fileID: 5782212803078552131, guid: 9c70d780c01d7364c97719b3ea6fbb0c,
+      type: 3}
+    m_aoSizeSounds:
+    - m_eSize: 2
+      m_oDefaultFallbackSound: {fileID: 5782212803078552131, guid: 9c70d780c01d7364c97719b3ea6fbb0c,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 5782212803078552131, guid: 9c70d780c01d7364c97719b3ea6fbb0c,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 4018216236876909898, guid: 1f51f9097e9e8d844a3d581603712ca7,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 8577736372778242338, guid: 241c97964e485b342a07a3b7c8c93072,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 42254163270038316, guid: cf3a815d6b551ad41b3b95ebf8288c96,
+          type: 3}
+    - m_eSize: 3
+      m_oDefaultFallbackSound: {fileID: 908903090552751652, guid: 7f1a0ebcdfc69c14db77a25f6ec0e3d1,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 908903090552751652, guid: 7f1a0ebcdfc69c14db77a25f6ec0e3d1,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 5456669153510121307, guid: 040eae6bd8d70cb4cb4c9e6d938bf753,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 791954991219692239, guid: a46e414e3814cc442a1a48ff3d411610,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 9117589164070625900, guid: e065ad11d93fe0440a3c357fc8cf7af4,
+          type: 3}
+  - m_eEntity: 2
+    m_aoEntityFallbackSounds:
+    - m_eSurface: 1
+      m_oSound: {fileID: 4383469302150348160, guid: 255d986ffcffb654ca588ae241ab1436,
+        type: 3}
+    - m_eSurface: 2
+      m_oSound: {fileID: 8090248247482477617, guid: 6eb79c120f2305c45865672666cfc4b7,
+        type: 3}
+    - m_eSurface: 3
+      m_oSound: {fileID: 8433183351541142353, guid: 71582ba511adb4942a492a0e0aa03b6b,
+        type: 3}
+    m_oDefaultFallbackSound: {fileID: 4383469302150348160, guid: 255d986ffcffb654ca588ae241ab1436,
+      type: 3}
+    m_aoSizeSounds:
+    - m_eSize: 1
+      m_oDefaultFallbackSound: {fileID: 4383469302150348160, guid: 255d986ffcffb654ca588ae241ab1436,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 4383469302150348160, guid: 255d986ffcffb654ca588ae241ab1436,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 8090248247482477617, guid: 6eb79c120f2305c45865672666cfc4b7,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 8433183351541142353, guid: 71582ba511adb4942a492a0e0aa03b6b,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 5230087498282833204, guid: cab4de905bc52fc41ac951604b3ebd4a,
+          type: 3}
+    - m_eSize: 3
+      m_oDefaultFallbackSound: {fileID: 6825927970106106557, guid: e1c2b5b870f5eb34886e357c082ba568,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 6825927970106106557, guid: e1c2b5b870f5eb34886e357c082ba568,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 7633124072462944456, guid: 321a4b509d3ca694e952825aea53fa4d,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 1800682607603796642, guid: c95b3155f77a49949b56c464af16d2fd,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 1341448985688500961, guid: 08aedee5b80d686438f7eeba8cf20d58,
+          type: 3}
+  - m_eEntity: 3
+    m_aoEntityFallbackSounds:
+    - m_eSurface: 1
+      m_oSound: {fileID: 3345887282660941770, guid: d0622182a6e7e4248b9411a33804a63e,
+        type: 3}
+    - m_eSurface: 2
+      m_oSound: {fileID: 5293529671895050163, guid: 97feaae17a73ad14d8f1b4536e41284f,
+        type: 3}
+    - m_eSurface: 3
+      m_oSound: {fileID: 2801616111436497450, guid: 889584659c36039459f19e30458f3aff,
+        type: 3}
+    m_oDefaultFallbackSound: {fileID: 3345887282660941770, guid: d0622182a6e7e4248b9411a33804a63e,
+      type: 3}
+    m_aoSizeSounds:
+    - m_eSize: 1
+      m_oDefaultFallbackSound: {fileID: 3345887282660941770, guid: d0622182a6e7e4248b9411a33804a63e,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 3345887282660941770, guid: d0622182a6e7e4248b9411a33804a63e,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 5293529671895050163, guid: 97feaae17a73ad14d8f1b4536e41284f,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 2801616111436497450, guid: 889584659c36039459f19e30458f3aff,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 6219620348135739154, guid: 9b3707e3beb959f4fab5aeae4c45b681,
+          type: 3}
+    - m_eSize: 2
+      m_oDefaultFallbackSound: {fileID: 2319947320533858541, guid: c84dbb25963391f49b40160c1fcf1879,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 2319947320533858541, guid: c84dbb25963391f49b40160c1fcf1879,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 261027872930058947, guid: ddb878bf3fdcc664fa3d652946265738,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 2026546011787747720, guid: 27bad8f96494c2a4daf56759826183eb,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 4133580949198088622, guid: 17aa72def9cbe9842804988cf8b470fb,
+          type: 3}
+    - m_eSize: 3
+      m_oDefaultFallbackSound: {fileID: 3253122528832201492, guid: 8d2b7b6206a92b243865080e48f3638d,
+        type: 3}
+      m_aoSurfaceSounds:
+      - m_eSurface: 1
+        m_oSound: {fileID: 3253122528832201492, guid: 8d2b7b6206a92b243865080e48f3638d,
+          type: 3}
+      - m_eSurface: 2
+        m_oSound: {fileID: 7159704595497339277, guid: 7da2048f1351219449da66359b83a39a,
+          type: 3}
+      - m_eSurface: 3
+        m_oSound: {fileID: 5665293724827433509, guid: c451e40815a355b4a81510c75b0f2ac3,
+          type: 3}
+      - m_eSurface: 4
+        m_oSound: {fileID: 1809021007677107100, guid: 159493b0bebd1d449830e48cd8223414,
+          type: 3}
+  m_oZoneFireSmallStart: {fileID: 916267772494552805, guid: a974604129e546749a2a4a0403a7efe4,
+    type: 3}
+  m_oZoneFireSmallLoop: {fileID: 358446933509565128, guid: 16b300cceacb8cf4a90cdba9245b8467,
+    type: 3}
+  m_oZoneFireBigLoop: {fileID: 41484057892236261, guid: 952045da60905644382f86f04f8496fc,
+    type: 3}
+  m_oZoneFireEnd: {fileID: 5802201613944575665, guid: 56731882e7a7be2479c0693d52e12db0,
+    type: 3}
+  m_oZoneFireExtend: {fileID: 6817443018398218268, guid: 9855f156abac98f40b58931836fca87c,
+    type: 3}
+  m_oControllerChange: {fileID: 3551284753454601476, guid: d48a165d7cc325d4097b0742b3217c08,
+    type: 3}

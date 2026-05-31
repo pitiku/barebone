@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &382532887274506597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382532887274506594}
+  - component: {fileID: 382532887274506595}
+  m_Layer: 0
+  m_Name: GameplayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &382532887274506594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382532887274506597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &382532887274506595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382532887274506597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4930d6fc94bd0b14893e2a9e09dfaef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oManagementCamera: {fileID: 0}
+  m_oCombatCamera: {fileID: 0}
+  m_oRenderTextureCamera: {fileID: 0}
+  m_oCombatCameraTransform: {fileID: 0}
+  m_oCombatCameraShake: {fileID: 0}
+  m_oItemVisualResources: {fileID: 9168975574991462682, guid: c2613976324f5b74b9c89408432b8f85,
+    type: 3}
+  m_oItemVisualEquipment: {fileID: 3963951062083170373, guid: a44f31a90b55bbc4fa354669047f914a,
+    type: 3}
+  m_oItemVisualRecruitment: {fileID: 8897721945024707448, guid: c600c212a1e8d4b459dee5b9c95b8c1a,
+    type: 3}
+  m_oItemVisualService: {fileID: 8897721945024707448, guid: 0949d39f74940ab40a0ced451c78c91d,
+    type: 3}
+  m_bTEST_JUST_CAMPFIRE: 0
+  m_sTEST_JUST_SCENE: 
+  m_sFALLBACK_SCENE: scn_forest_fallenTree
+  m_bRunCompleted: 0
+  m_iRunsPlayedInThisSession: 0
+  m_bInXanderTower: 0
+  m_eGameLocation: 19
+  m_eLastGameLocation: 19
+  m_aeCountTimeInLocations: 010000000200000003000000
+  m_oMapInfoBeingShown:
+    m_iNodeID: 0
+    m_iPreviousNodeID: 0
+    m_fDuration: 0
+    m_eMapInfo: 0
+    m_sAnimation: 
+    m_bAlreadyObtained: 0
+    m_vNodePosition: {x: 0, y: 0}
+    m_vNodePosition_1: {x: 0, y: 0}
+    m_vNodePosition_2: {x: 0, y: 0}
+    m_bIsValid: 0
+    m_sQuestID: 
+    m_sInstanceID: 
+    m_sItemID: 
+  m_oLastInstantiatedObject: {fileID: 0}
+  m_asJewelSkillsUnlocked: []

@@ -1,0 +1,14 @@
+Rewired PlayStation 4 Plugin
+
+v4:
+  - Added new input source option: Unity Input System PS4.
+  - Changed minimum Rewired version to 1.1.63.0 for Unity 2021+.
+
+v3:
+  - Bug Fix: Fixed inverted Y axis in orientation returned by PS4ControllerExtension.GetOrientation.
+
+v2:
+  - Added vibration renewal workaround to allow inifinite vibration.
+
+v1:
+  - Initial release.

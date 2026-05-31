@@ -1,0 +1,49 @@
+{
+    "name": "Rewired.PS5.UnityInputSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d7e5ce7700b25394bac3df2ed84a9a65",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:cd5e5d7edbf806b4aa5c04910bdd8adf"
+    ],
+    "includePlatforms": [
+        "PS5"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "ENABLE_INPUT_SYSTEM",
+        "!REWIRED_DISABLE_UNITY_INPUT_SYSTEM_SUPPORT"
+    ],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2021.2.0f1",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_SUPPORTED"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.10.0",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_INSTALLED"
+        },
+        {
+            "name": "com.unity.inputsystem.ps5",
+            "expression": "0.3.0-preview",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_PS5_INSTALLED"
+        },
+        {
+            "name": "Unity",
+            "expression": "6000.0.0b12",
+            "define": "REWIRED_PS5_UNITY_INPUT_SYSTEM_SUPPORT_ENHANCED_INPUT_SYSTEM"
+        },
+        {
+            "name": "Unity",
+            "expression": "6000.1.0a5",
+            "define": "REWIRED_PS5_UNITY_INPUT_SYSTEM_SUPPORT_ANGVEL_DEADBAND_STATE"
+        }
+    ],
+    "noEngineReferences": false
+}

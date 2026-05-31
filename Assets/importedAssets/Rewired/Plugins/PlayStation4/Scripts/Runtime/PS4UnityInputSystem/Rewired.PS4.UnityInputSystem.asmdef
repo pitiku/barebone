@@ -1,0 +1,49 @@
+{
+    "name": "Rewired.PS4.UnityInputSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d7e5ce7700b25394bac3df2ed84a9a65",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:a151168a8e158df489aeaaf4471da082"
+    ],
+    "includePlatforms": [
+        "PS4"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "ENABLE_INPUT_SYSTEM",
+        "!REWIRED_DISABLE_UNITY_INPUT_SYSTEM_SUPPORT"
+    ],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2021.2.0f1",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_SUPPORTED"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.7.0",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_INSTALLED"
+        },
+        {
+            "name": "com.unity.inputsystem.ps4",
+            "expression": "0.2.0-pre",
+            "define": "REWIRED_UNITY_INPUT_SYSTEM_PS4_INSTALLED"
+        },
+        {
+            "name": "Unity",
+            "expression": "6000.1.0a7",
+            "define": "REWIRED_PS4_UNITY_INPUT_SYSTEM_SUPPORT_CONTROLLER_INFO"
+        },
+        {
+            "name": "Unity",
+            "expression": "6000.1.0a7",
+            "define": "REWIRED_PS4_UNITY_INPUT_SYSTEM_SUPPORT_SENSOR_INFO"
+        }
+    ],
+    "noEngineReferences": false
+}

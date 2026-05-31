@@ -1,0 +1,44 @@
+Rewired PlayStation 5 Plugin
+
+v7:
+  - Added new input source option: Unity Input System PS5.
+  - Changed minimum Rewired version to 1.1.63.0 for Unity 2021+.
+  - Changed default gamepad vibration mode to Compatible2.
+
+v6:
+  - Bug Fix: Fixed inverted Y axis in orientation returned by PS5ControllerExtension.GetOrientation.
+
+v5:
+  - Added vibration renewal workaround to allow inifinite vibration.
+
+v4:
+  - Changed required minimum Rewired version to 1.1.47.0.
+  - Added ControllerExtensions.IDualShockGamepadExtension interface to PS5GamepadExtension.
+  - Reduced memory allocation overhead when setting multi-position trigger effects.
+  
+v3:
+  - Added gamepad trigger effect functionality.
+  
+  API Changes:
+    - Added PS5GamepadVibrationMode.Compatible2 value.
+    - Added PS5GamepadTriggerType enum.
+    - Added PS5GamepadTriggerEffectType enum.
+    - Added PS5GamepadTriggerEffectState enum.
+    - Added PS5GamepadTriggerEffectPositionValueSet struct.
+    - Added IPS5GamepadTriggerEffect interface.
+    - Added PS5GamepadTriggerEffectOff struct.
+    - Added PS5GamepadTriggerEffectFeedback struct.
+    - Added PS5GamepadTriggerEffectWeapon struct.
+    - Added PS5GamepadTriggerEffectVibration struct.
+    - Added PS5GamepadTriggerEffectMultiplePositionFeedback struct.
+    - Added PS5GamepadTriggerEffectSlopeFeedback struct.
+    - Added PS5GamepadTriggerEffectMultiplePositionVibration struct.
+    - Added PS5GamepadTriggerEffectStates struct.
+    - Added PS5GamepadExtension.SetTriggerEffect function.
+    - Added PS5GamepadExtension.GetTriggerEffectStates function.
+
+v2:
+  - Fixed compiler issues when using Burst 1.82+.
+
+v1:
+  - Initial release.

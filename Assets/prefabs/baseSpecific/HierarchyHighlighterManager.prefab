@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9205307664854471982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6561037219739103119}
+  - component: {fileID: 3692681077780464101}
+  m_Layer: 0
+  m_Name: HierarchyHighlighterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6561037219739103119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205307664854471982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 161.61792, y: 51.379147, z: 23.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3692681077780464101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205307664854471982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f368aa6c079b75d4293b2503e08a2433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cDefaultBackgroundColor: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+  m_bActive: 1
+  m_fUpdateComponentsFrequency: 1
+  m_aoStyles:
+  - rid: 6820330643778699309
+  - rid: 6820330643778699310
+  - rid: 6820330643778699311
+  - rid: 6820330643778699312
+  - rid: 1203224421089935645
+  references:
+    version: 2
+    RefIds:
+    - rid: 1203224421089935645
+      type: {class: HierarchyStyleConfig, ns: , asm: Assembly-CSharp}
+      data:
+        m_sType: State
+        m_oBackground: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+        m_oEnabled: {r: 0.86496, g: 0.35457456, b: 0.9056604, a: 1}
+        m_oDisabled: {r: 0.86496, g: 0.35457456, b: 0.9056604, a: 0.4862745}
+        m_bBold: 0
+        m_bItalic: 0
+    - rid: 6820330643778699309
+      type: {class: HierarchyStyleConfig, ns: , asm: Assembly-CSharp}
+      data:
+        m_sType: Dialogue
+        m_oBackground: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+        m_oEnabled: {r: 0, g: 0.6509804, b: 1, a: 1}
+        m_oDisabled: {r: 0, g: 0.33359233, b: 0.6698113, a: 1}
+        m_bBold: 0
+        m_bItalic: 0
+    - rid: 6820330643778699310
+      type: {class: HierarchyStyleConfig, ns: , asm: Assembly-CSharp}
+      data:
+        m_sType: DialoguePart
+        m_oBackground: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+        m_oEnabled: {r: 0, g: 1, b: 1, a: 1}
+        m_oDisabled: {r: 0, g: 0.6415094, b: 0.6415094, a: 1}
+        m_bBold: 0
+        m_bItalic: 0
+    - rid: 6820330643778699311
+      type: {class: HierarchyStyleConfig, ns: , asm: Assembly-CSharp}
+      data:
+        m_sType: DialogueOption
+        m_oBackground: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+        m_oEnabled: {r: 0.22745097, g: 1, b: 0.53340113, a: 1}
+        m_oDisabled: {r: 0.17377181, g: 0.6698113, b: 0.37017325, a: 1}
+        m_bBold: 0
+        m_bItalic: 0
+    - rid: 6820330643778699312
+      type: {class: HierarchyStyleConfig, ns: , asm: Assembly-CSharp}
+      data:
+        m_sType: DialogueEvent
+        m_oBackground: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+        m_oEnabled: {r: 0.85002595, g: 1, b: 0.22745097, a: 1}
+        m_oDisabled: {r: 0.5440327, g: 0.6415094, b: 0.13616946, a: 1}
+        m_bBold: 0
+        m_bItalic: 0

@@ -1,0 +1,1084 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8626945970065977994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624753285354187478}
+  - component: {fileID: 8514757820154595386}
+  - component: {fileID: 8514436880109818174}
+  - component: {fileID: 8514264291165615070}
+  - component: {fileID: 5122945079582345714}
+  m_Layer: 0
+  m_Name: CHOOSE_LOADING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624753285354187478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626945970065977994}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514757820154595386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626945970065977994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &8514436880109818174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626945970065977994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4314a0257504ecdb25362b4098150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514539874563144134}
+  m_sComment: 
+  m_oHOCComponent:
+    m_oValue: {fileID: 8514179184160411984}
+    m_iReference: 0
+    m_sName: 
+  m_sMethod: UseLoadingScreen
+  m_bResult: 0
+--- !u!114 &8514264291165615070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626945970065977994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4314a0257504ecdb25362b4098150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514318140985103200}
+  m_sComment: 
+  m_oHOCComponent:
+    m_oValue: {fileID: 8514179184160411984}
+    m_iReference: 0
+    m_sName: 
+  m_sMethod: UseLoadingScreen
+  m_bResult: 1
+--- !u!114 &5122945079582345714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626945970065977994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: Unlink scene states
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: unlinkSceneStates
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &8627058459792546202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624869414824094748}
+  - component: {fileID: 8514856960295006616}
+  - component: {fileID: 8514778954047486650}
+  - component: {fileID: 8514669874240310546}
+  - component: {fileID: 8514632466420559140}
+  - component: {fileID: 8514692490780643334}
+  - component: {fileID: 8514651466250032070}
+  m_Layer: 0
+  m_Name: IN_LOADING_SCREEN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624869414824094748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514856960295006616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &8514778954047486650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e504eef216a64429b2b05cb8ae60ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514580185176981914}
+  m_sComment: 
+  m_aoOthers:
+  - {fileID: 8514669874240310546}
+  - {fileID: 8514632466420559140}
+  - {fileID: 8514692490780643334}
+--- !u!114 &8514669874240310546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4314a0257504ecdb25362b4098150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 0}
+  m_sComment: 
+  m_oHOCComponent:
+    m_oValue: {fileID: 8514179184160411984}
+    m_iReference: 0
+    m_sName: 
+  m_sMethod: IsAsyncLoadReadyToComplete
+  m_bResult: 1
+--- !u!114 &8514632466420559140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b53d0ea918f28a42804fbab3ce0cbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 0}
+  m_sComment: 
+--- !u!114 &8514692490780643334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1567fba7a07033f43b6f0c296e736814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 0}
+  m_sComment: 
+  m_oSingletonCall:
+    m_sSingleton: LoadingManager
+    m_sMethod: IsLoadDone
+  m_bResult: 1
+--- !u!114 &8514651466250032070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627058459792546202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc3ba5584045b94491d39deba617e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 0
+  m_fTime: 0
+  m_sComment: 
+  m_fadeToBlack: 1
+  m_fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fadeDuration: 0.3
+  m_bIsBehindUI: 0
+--- !u!1 &8627061483129679990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624148237757021162}
+  - component: {fileID: 8514539874563144134}
+  - component: {fileID: 4878797736078000007}
+  - component: {fileID: 8514438692542490706}
+  - component: {fileID: 8514435935060518772}
+  m_Layer: 0
+  m_Name: LOAD_SCENE_SYNC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624148237757021162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627061483129679990}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514539874563144134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627061483129679990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &4878797736078000007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627061483129679990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd49c1be8e3f0d4a8068d914c5335fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: 
+  m_bSetToLastGameLocation: 0
+  m_eLocation: 15
+--- !u!114 &8514438692542490706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627061483129679990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: 
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8514179184160411984}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: ExecuteLoading
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8514435935060518772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627061483129679990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4314a0257504ecdb25362b4098150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514102235789770076}
+  m_sComment: 
+  m_oHOCComponent:
+    m_oValue: {fileID: 8514179184160411984}
+    m_iReference: 0
+    m_sName: 
+  m_sMethod: IsSyncLoadingDone
+  m_bResult: 1
+--- !u!1 &8627233351904976236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624680070408078988}
+  - component: {fileID: 8514318140985103200}
+  - component: {fileID: 2818829709704175980}
+  - component: {fileID: 8514672586565344996}
+  - component: {fileID: 8514035078016237584}
+  - component: {fileID: 8514194269694409230}
+  - component: {fileID: 8514300553856658232}
+  m_Layer: 0
+  m_Name: LOAD_LOADING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624680070408078988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514318140985103200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &2818829709704175980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd49c1be8e3f0d4a8068d914c5335fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: 
+  m_bSetToLastGameLocation: 0
+  m_eLocation: 15
+--- !u!114 &8514672586565344996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: 
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8514179184160411984}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: LoadLoadingScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8514035078016237584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3211bfb4fd9a1941b971091872976fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514856960295006616}
+  m_sComment: 
+  m_fTime: 0.01
+--- !u!114 &8514194269694409230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 0
+  m_fTime: 0
+  m_sComment: 
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8514179184160411984}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: ExecuteAsyncLoading
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8514300553856658232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627233351904976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc3ba5584045b94491d39deba617e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 0
+  m_fTime: 0
+  m_sComment: 
+  m_fadeToBlack: 0
+  m_fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fadeDuration: 0.3
+  m_bIsBehindUI: 0
+--- !u!1 &8627234917602706168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624247524104824176}
+  - component: {fileID: 8514580185176981914}
+  - component: {fileID: 8514178005763038362}
+  - component: {fileID: 8514126155915326602}
+  m_Layer: 0
+  m_Name: WAITING_TO_COMPLETE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624247524104824176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627234917602706168}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514580185176981914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627234917602706168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &8514178005763038362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627234917602706168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b53d0ea918f28a42804fbab3ce0cbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8513972585489179546}
+  m_sComment: 
+--- !u!114 &8514126155915326602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627234917602706168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 0
+  m_fTime: 0
+  m_sComment: 
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8514179184160411984}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: CompleteLoading
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &8627346622809337536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624168453400056594}
+  - component: {fileID: 8513972585489179546}
+  - component: {fileID: 8514226944877031136}
+  - component: {fileID: 8514704698776694892}
+  - component: {fileID: 8514554752735768280}
+  m_Layer: 0
+  m_Name: ACTIVATE_LOADED_SCENE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624168453400056594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627346622809337536}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8513972585489179546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627346622809337536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &8514226944877031136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627346622809337536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e504eef216a64429b2b05cb8ae60ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514102235789770076}
+  m_sComment: 
+  m_aoOthers:
+  - {fileID: 8514704698776694892}
+  - {fileID: 8514554752735768280}
+--- !u!114 &8514704698776694892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627346622809337536}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4314a0257504ecdb25362b4098150d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 0}
+  m_sComment: 
+  m_oHOCComponent:
+    m_oValue: {fileID: 8514179184160411984}
+    m_iReference: 0
+    m_sName: 
+  m_sMethod: IsLoadingCompleted
+  m_bResult: 1
+--- !u!114 &8514554752735768280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627346622809337536}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3211bfb4fd9a1941b971091872976fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 0}
+  m_sComment: 
+  m_fTime: 0.25
+--- !u!1 &8627460589785313858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624255716409902150}
+  - component: {fileID: 8514179184160411984}
+  m_Layer: 0
+  m_Name: LoadingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624255716409902150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627460589785313858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8624697791400307536}
+  - {fileID: 8624753285354187478}
+  - {fileID: 8624680070408078988}
+  - {fileID: 8624869414824094748}
+  - {fileID: 8624247524104824176}
+  - {fileID: 8624168453400056594}
+  - {fileID: 8624401998923554892}
+  - {fileID: 8624148237757021162}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514179184160411984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627460589785313858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0db30d2d9deb74478d8b77c9dea06cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive:
+  - {fileID: 8514863538193337770}
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 0
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 0}
+  m_bDontInitializeOnAwake: 0
+  m_oStartLoadingState: {fileID: 8514757820154595386}
+  m_sLoadingScene: loading
+  m_oOnLoadingEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_iScenesLoaded: 0
+--- !u!1 &8627662593198015536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624401998923554892}
+  - component: {fileID: 8514102235789770076}
+  - component: {fileID: 8514758215446625734}
+  - component: {fileID: 8955558614911096308}
+  - component: {fileID: 6042045091363821505}
+  m_Layer: 0
+  m_Name: FADE_TO_SCENE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624401998923554892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627662593198015536}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514102235789770076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627662593198015536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0
+--- !u!114 &8514758215446625734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627662593198015536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a49cabeacd52804294b3d084aa5a03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: link to onEnterSceneEvents
+  m_o: {fileID: 0}
+  m_bIncludeChildren: 0
+--- !u!114 &8955558614911096308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627662593198015536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c2bada1fd81a40b7fee90b125559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bStartOrEnd: 1
+  m_fTime: 0
+  m_sComment: 
+  m_oEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8514179184160411984}
+        m_TargetAssemblyTypeName: LoadingManager, Assembly-CSharp
+        m_MethodName: loadSceneFinished
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6042045091363821505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627662593198015536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b53d0ea918f28a42804fbab3ce0cbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTargetState: {fileID: 8514863538193337770}
+  m_sComment: 
+--- !u!1 &8627767353231041838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624697791400307536}
+  - component: {fileID: 8514863538193337770}
+  m_Layer: 0
+  m_Name: IDLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624697791400307536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627767353231041838}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8624255716409902150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8514863538193337770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8627767353231041838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45056e8b196fe5c4d8f9db2fbb9be360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bUpdateImmediately: 0
+  m_bPaused: 0
+  m_bDebugState: 0
+  m_bDebugSaveStates: 0
+  m_iInterruptPriority: 10
+  m_aoDefaultActive: []
+  m_oParentState: {fileID: 0}
+  m_oChildStateToActivate: {fileID: 0}
+  m_aoStates: []
+  m_abActiveStatesInUpdate: 
+  m_aoBehaviors: []
+  m_aoTimedEvents: []
+  m_iTimedEventsLeft: 0
+  m_fTimer: 48.53724
+  m_fFixedTimer: 0
+  m_oStateMachine: {fileID: 8514179184160411984}
+  m_bDontInitializeOnAwake: 0

@@ -1,0 +1,133 @@
+Rewired Game Core Plugin
+
+v36:
+  - Bug Fix: Reverted breaking change made in v34 that inadvertently changed the minimum Rewired version to 1.1.61.0.
+
+v35:
+  - Added GDK 10.0.26100.6194 native library.
+
+v34:
+  - Removed all internal use of IGameInputReading::GetMotionState due to reported crashes by Microsoft with some hardware configurations.
+
+v33:
+  - Adapted to breaking changes in newest versions of Unity Game Core editor plugins preventing Rewired from detecting GDK version used by Unity.
+
+v32:
+  - Added GDK 10.0.26100.4020 native library.
+
+v31:
+  - Added hat switch to Flight Stick device profile.
+  - Exposed product name for Racing Wheel devices. (Requires Rewired 1.1.59.0+)
+  - Changed input polling to process entire remaining input history buffer on each update to address input latency issues with high refresh rate controllers (Power A Fusion Pro).
+
+v30:
+  - Added GDK 10.0.25398.4271 native library.
+  - Changed how device profiles are handled so all elements can be read on devices that support multiple device profiles such as Racing Wheel.
+  - Joystick Element Identifier tool now reports the actual number of buttons, axes, and hats reported by the GDK API and reports additional information.
+  - Changed ControllerProfileType.Raw to ControllerProfileType.Generic.
+
+v29:
+  - Changed input polling to read next event from input history buffer instead of only the current event.
+
+v28:
+  - Reworked GDK version detection due to breaking changes in recent Unity Xbox Game Core versions.
+
+v27:
+  - Added GDK 10.0.26100.1874 native library.
+
+v26:
+  - Added GDK 10.0.22621.4313 native library.
+
+v25:
+  - Changed GDK input event queue dispatch timeout to 1 second to address extreemly rare reported issue of massive input lag in multi-player games.
+  - Added GDK 10.0.25398.1940 native library.
+  - Added GDK 10.0.25398.3171 native library.
+  
+  API Changes:
+    - Added ControllerProfileType enum.
+    - Added GameCoreControllerExtension.primaryControllerProfileType property.
+    - Added GameCoreControllerExtension.controllerProfileTypes property.
+    - Changed all enums in Rewired.Platforms.GameCore.Native to internal.
+
+v24:
+  - Added GDK 10.0.25398.1917 native library.
+
+v23:
+  - Added GDK 10.0.22621.4272 native library.
+
+v22:
+  - Input events are no longer lost when overlay is opened.
+  - Added GDK 10.0.22621.3049 native library.
+  - Added GDK 10.0.22621.3068 native library.
+
+v21:
+  - Added GDK 10.0.22621.1877 native library.
+  - Changes to native and managed libraries to support breaking API changes in GDK 10.0.22621.1877.
+
+v20:
+  - Added GDK 10.0.22000.4429 native library.
+
+v19:
+  - Added GDK 10.0.22000.4362 native library.
+
+v18:
+  - Added GDK 10.0.22000.3160 native library.
+
+v17:
+  - Added GDK 10.0.19041.7032 native library.
+  - Fixed bug causing some input events to be lost when using multiple controllers simultaneously.
+
+v16:
+  - Reworked native user association changed events to behave more like GDK user association changed event. (Event now fires on controller connect and before controller disconnect.)
+  - Added workaround for device user association change events sometimes being sent by GDK before device connection events, causing the device user association event to be lost because no Controller had been created matching the event's device id at the time the event was processed.
+
+v15:
+  - Added GameCoreControllerExtension.NativeUserChangedEvent event.
+  - Added GameCoreInput.NativeUserControllerAssociationChangedEvent event.
+
+v14:
+  - Fixed exception thrown when Rewired Input Manager is disabled at runtime and then re-enabled.
+  - Fixed crash when Rewired Input Manager is disabled at runtime, a controller connected, then re-enabled.
+
+v13:
+  - Added GDK 10.0.19041.7011 native library.
+  - Fixed manual GDK version selector not replacing native libraries when changing versions.
+  - GDK version is now determined from the Unity extension rather than checking the GDK environment variable to detect which version of the native library to extract. If the system had a newer version of the GDK installed than the GDK version of the Unity editor being used, a library built to a newer version of the GDK could be installed causing errors in a build.
+
+v12:
+  - Added GDK 10.0.19041.6101 native library.
+
+v11:
+  - Performance improvements.
+
+v10:
+  - Fixed possible IndexOutOfRangeException when using devices that support Raw Device profile.
+
+v9:
+  - Fixed possible crash when using devices that support Raw Device profile.
+
+v8:
+  - Fixed bug causing GameCoreInput.ControllerAssignment.assignJoysticksByUserId value to not be retained when set at runtime.
+
+v7:
+  - Fixed incorrect labeling of Left Stick Button and Guide button elements.
+
+v6:
+  - Removed touch control component due to unexplained crashes when receiving touch input events.
+
+v5:
+  - Fixed crash when touch input is received in GDK 10.0.19041.5057+.
+
+v4:
+  - Recompiled due to errors in obfuscation in 2021.x branch.
+
+v3:
+  - Fixed IL2CPP error when calling GameCoreControllerExtension.GetComponent<IGameCoreVibrationDevice>();
+
+v2:
+  - Added GDK 10.0.19041.5057 native library.
+  - Added native library pdb files.
+  - Bug Fix: Fixed infinite loop when calling GameCoreInput.ControllerAssignment.SetPlayerForUserId(long nativeUserId, Player player) overload.
+
+v1:
+  - Initial release.

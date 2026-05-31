@@ -1,0 +1,18 @@
+{
+    "name": "RewiredEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3c92c127aeb22d94d914184bc69a603e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
