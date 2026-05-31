@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gamePackage>
+  <language id="00" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b r a j t s t o w n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b r a j t s t e n i</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="01" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l ay t s t ow n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l ay t s t ax n iy</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="02" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l a j t t O n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l i a j t t O n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="03" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>B l i g t s t o n e</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l a j t s t o w n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="04" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l i k h t s t o n ae</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l aI t s t o u n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="05" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l i g t s t o n e</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l a j t s t o w n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="08" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l a j t s t o u n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l a j t s t ae n i</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="16" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l iy g x t s t o n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l iy g x t s t o w n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+  <language id="18" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l ay t s t ow n</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">Blightstone</text>
+      <pronunciation>b l ay g t s t ow n</pronunciation>
+    </speechRecognitionWords>
+  </language>
+</gamePackage>

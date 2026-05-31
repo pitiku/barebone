@@ -1,0 +1,29 @@
+{
+    "ageLevel": {
+        "US": 6,
+        "default": 6
+    },
+    "applicationCategoryType": 0,
+    "applicationDrmType": "standard",
+    "attribute": 536870912,
+    "attribute2": 0,
+    "attribute3": 4194308,
+    "contentId": "EP1070-PPSA38144_00-0775397010105851",
+    "contentVersion": "01.000.000",
+    "downloadDataSize": 0,
+    "localizedParameters": {
+        "defaultLanguage": "en-US",
+        "en-US": {
+            "titleName": "Blightstone"
+        }
+    },
+    "masterVersion": "01.00",
+    "titleId": "PPSA38144",
+    "conceptId": "10019797",
+    "contentBadgeType": 1,
+    "userDefinedParam1": 0,
+    "userDefinedParam2": 0,
+    "userDefinedParam3": 0,
+    "userDefinedParam4": 0,
+    "versionFileUri": "https://agst.prod.dl.playstation.net/agst/prod/00/sp-int/PPSA38144_00/675db311-7239-4365-9e43-50566ab49552-version.xml"
+}
