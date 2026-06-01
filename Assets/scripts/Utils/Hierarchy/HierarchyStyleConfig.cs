@@ -20,23 +20,35 @@ public class HierarchyStyleConfig
     [HorizontalGroup("third"), LabelWidth(40), LabelText("italic")]
     public bool m_bItalic = false;
 
+    private FontStyle m_eCachedFontStyle = FontStyle.Normal;
+    private bool m_bFontStyleDirty = true;
+
+    public void OnBeforeSerialize() { }
+    public void OnAfterDeserialize() { m_bFontStyleDirty = true; }
+
     public FontStyle getFontStyle()
     {
-        if (m_bBold && m_bItalic)
+        if (m_bFontStyleDirty)
         {
-            return FontStyle.BoldAndItalic;
+            if (m_bBold && m_bItalic)
+            {
+                m_eCachedFontStyle = FontStyle.BoldAndItalic;
+            }
+            else if (m_bBold)
+            {
+                m_eCachedFontStyle = FontStyle.Bold;
+            }
+            else if (m_bItalic)
+            {
+                m_eCachedFontStyle = FontStyle.Italic;
+            }
+            else
+            {
+                m_eCachedFontStyle = FontStyle.Normal;
+            }
+            m_bFontStyleDirty = false;
         }
 
-        if (m_bBold)
-        {
-            return FontStyle.Bold;
-        }
-
-        if (m_bItalic)
-        {
-            return FontStyle.Italic;
-        }
-
-        return FontStyle.Normal;
+        return m_eCachedFontStyle;
     }
 }

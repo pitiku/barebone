@@ -1,11 +1,10 @@
-﻿using Sirenix.OdinInspector;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
-#if UNITY_EDITOR
-using UnityEditor;
 
 [InitializeOnLoad]
 [ExecuteInEditMode]
@@ -40,13 +39,13 @@ public class HierarchyManager : MonoBehaviour
             if (m_bUpdateNeeded)
             {
                 m_bUpdateNeeded = false;
+                EditorApplication.RepaintHierarchyWindow();
             }
-
-            EditorApplication.RepaintHierarchyWindow();
-            m_bUpdateNeeded = m_oUpdateComponentsTimer.hasPassedTime(m_fUpdateComponentsFrequency);
-            if (m_bUpdateNeeded)
+            else if (m_oUpdateComponentsTimer.hasPassedTime(m_fUpdateComponentsFrequency))
             {
+                m_bUpdateNeeded = true;
                 m_oUpdateComponentsTimer.start();
+                EditorApplication.RepaintHierarchyWindow();
             }
         }
     }
@@ -67,6 +66,10 @@ public class HierarchyManager : MonoBehaviour
     Dictionary<GameObject, (HierarchyStyleConfig, bool)> m_aoObjectStyles = new Dictionary<GameObject, (HierarchyStyleConfig, bool)>();
     Timer m_oUpdateComponentsTimer = new Timer(eType.DontTrack);
     bool m_bUpdateNeeded = false;
+
+    // Cache for component lookups to avoid repeated GetComponent calls
+    Dictionary<(GameObject, string), Component> m_oComponentCache = new Dictionary<(GameObject, string), Component>();
+
     void HierarchyHighlight_OnGUI(int inSelectionID, Rect _oInSelectionRect)
     {
         GameObject oGO = EditorUtility.EntityIdToObject(inSelectionID) as GameObject;
@@ -80,10 +83,13 @@ public class HierarchyManager : MonoBehaviour
             // check style
             if (m_bUpdateNeeded)
             {
+                // Clear component cache for this frame to avoid stale data
+                m_oComponentCache.Clear();
+
                 bool bStyleFound = false;
                 for (int i = 0; i < m_aoStyles.Count; ++i)
                 {
-                    Component oComponent = oGO.GetComponent(m_aoStyles[i].m_sType);
+                    Component oComponent = getComponentCached(oGO, m_aoStyles[i].m_sType);
                     if (oComponent != null)
                     {
                         // check if its enabled in case is a monobehavior
@@ -106,10 +112,10 @@ public class HierarchyManager : MonoBehaviour
             }
             else
             {
-                if (m_aoObjectStyles.ContainsKey(oGO))
+                if (m_aoObjectStyles.TryGetValue(oGO, out var cachedStyle))
                 {
-                    oSelectedStyle = m_aoObjectStyles[oGO].Item1;
-                    bEnabled = m_aoObjectStyles[oGO].Item2;
+                    oSelectedStyle = cachedStyle.Item1;
+                    bEnabled = cachedStyle.Item2;
                 }
             }
 
@@ -140,7 +146,7 @@ public class HierarchyManager : MonoBehaviour
             int iRightIcons = 0;
             for (int i = 0; i < m_aoIcons.Count; ++i)
             {
-                Component oComponent = oGO.GetComponent(m_aoIcons[i].m_sType);
+                Component oComponent = getComponentCached(oGO, m_aoIcons[i].m_sType);
                 if (oComponent != null)
                 {
                     // calculate position of the icon
@@ -177,6 +183,17 @@ public class HierarchyManager : MonoBehaviour
             // and draw the text with style
             drawStyle(bIsSelected, oSelectedStyle, sName, Offset, BackgroundOffset, bPrefab, bEnabled);
         }
+    }
+
+    Component getComponentCached(GameObject oGO, string sType)
+    {
+        var key = (oGO, sType);
+        if (!m_oComponentCache.TryGetValue(key, out var oComponent))
+        {
+            oComponent = oGO.GetComponent(sType);
+            m_oComponentCache[key] = oComponent;
+        }
+        return oComponent;
     }
 
     void drawStyle(bool _bSelected, HierarchyStyleConfig _oConfig, string _sName, Rect _oOffset, Rect _oBackgroundOffset, bool _bPrefab, bool _bActive)
