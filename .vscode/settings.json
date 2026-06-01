@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "barebone.sln"
+    "dotnet.defaultSolution": "barebone_github.sln"
 }

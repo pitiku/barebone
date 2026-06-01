@@ -7,9 +7,7 @@ using System.Text;
 using UnityEngine;
 
 [AttributeUsage(AttributeTargets.Field, Inherited = true)]
-public class DontSaveDataAttribute : Attribute
-{
-}
+public class DontSaveDataAttribute : Attribute {}
 
 public interface IPreSaveSync
 {

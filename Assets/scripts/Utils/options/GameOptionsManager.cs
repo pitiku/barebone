@@ -22,36 +22,36 @@ public class GameOptionsManager : SceneSingleton<GameOptionsManager>
 
         applyVibration();
 
-        I2.Loc.LocalizationManager.CurrentLanguageCode = DataManager.SaveDataOptions.m_sLanguageCode;
+        I2.Loc.LocalizationManager.CurrentLanguageCode = SaveManager.SaveData.m_sLanguageCode;
     }
 
     #region Appliers
 
     public void applyMusicVolume()
     {
-        AudioManager.Instance.setMixerVolume(AudioManager.Instance.m_oMusicGroup, DataManager.SaveDataOptions.m_fMusicVolume);
+        AudioManager.Instance.setMixerVolume(AudioManager.Instance.m_oMusicGroup, SaveManager.SaveData.m_fMusicVolume);
     }
 
 
     public void applySoundVolume()
     {
-        AudioManager.Instance.setMixerVolume(AudioManager.Instance.m_oFXGroup, DataManager.SaveDataOptions.m_fFXVolume);
+        AudioManager.Instance.setMixerVolume(AudioManager.Instance.m_oFXGroup, SaveManager.SaveData.m_fFXVolume);
     }
 
     void applyVibration()
     {
-        RewiredManager.Instance.m_bVibrationEnabled = DataManager.SaveDataOptions.m_bCameraShake;
+        RewiredManager.Instance.m_bVibrationEnabled = SaveManager.SaveData.m_bCameraShake;
     }
 
 #if UNITY_EDITOR || UNITY_STANDALONE
     private void applyQualityLevel()
     {
-        QualitySettings.SetQualityLevel(DataManager.SaveDataOptions.m_iQualityLevel);
+        QualitySettings.SetQualityLevel(SaveManager.SaveData.m_iQualityLevel);
     }
 
     public void applyVSync()
     {
-        QualitySettings.vSyncCount = DataManager.SaveDataOptions.m_bVSync ? 1 : 0;
+        QualitySettings.vSyncCount = SaveManager.SaveData.m_bVSync ? 1 : 0;
     }
 #endif
     #endregion
@@ -61,32 +61,32 @@ public class GameOptionsManager : SceneSingleton<GameOptionsManager>
 #if UNITY_EDITOR || UNITY_STANDALONE
     public void setVSync(bool _bValue)
     {
-        DataManager.SaveDataOptions.m_bVSync = _bValue;
+        SaveManager.SaveData.m_bVSync = _bValue;
         applyVSync();
     }
 
     public void setQualityLevel(int level)
     {
-        DataManager.SaveDataOptions.m_iQualityLevel = level;
+        SaveManager.SaveData.m_iQualityLevel = level;
         applyQualityLevel();
     }
 #endif
 
     public void setSoundVolume(float value)
     {
-        DataManager.SaveDataOptions.m_fFXVolume = value;
+        SaveManager.SaveData.m_fFXVolume = value;
         applySoundVolume();
     }
 
     public void setMusicVolume(float value)
     {
-        DataManager.SaveDataOptions.m_fMusicVolume = value;
+        SaveManager.SaveData.m_fMusicVolume = value;
         applyMusicVolume();
     }
 
     public void setDifficulty(int level)
     {
-        DataManager.SaveDataProgression.m_iDifficulty = level;
+        SaveManager.SaveData.m_iDifficulty = level;
     }
 
     #endregion

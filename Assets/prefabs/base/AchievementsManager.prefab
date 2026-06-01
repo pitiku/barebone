@@ -550,14 +550,7 @@ MonoBehaviour:
   m_oTag:
     m_sPredifinedTag: Custom
     m_sCustomTag: 
-  m_oIGameEntity:
-    rid: -2
   m_eType: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
 --- !u!114 &8002774030570303456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +749,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -871,14 +865,7 @@ MonoBehaviour:
   m_oTag:
     m_sPredifinedTag: Custom
     m_sCustomTag: 
-  m_oIGameEntity:
-    rid: -2
   m_eType: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
 --- !u!114 &7998688741538938756
 MonoBehaviour:
   m_ObjectHideFlags: 0

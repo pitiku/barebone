@@ -17,6 +17,6 @@ public class LanguageSelector : MonoBehaviour
     private void onLanguageSelected(int _iLanguageIndex)
     {
         Localization.setLanguage(m_asLanguages[_iLanguageIndex]);
-        DataManager.SaveDataOptions.m_sLanguageCode = m_asLanguages[_iLanguageIndex];
+        SaveManager.SaveData.m_sLanguageCode = m_asLanguages[_iLanguageIndex];
     }
 }

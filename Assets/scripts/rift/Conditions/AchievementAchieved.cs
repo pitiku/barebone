@@ -8,7 +8,7 @@ public class AchievementAchieved : Condition
 
     public override bool isMet(ICondition iC = null)
     {
-        bool bIsAcheived = DataManager.Instance.isAchieved(m_eAchievement.m_sID);
+        bool bIsAcheived = SaveManager.Instance.isAchieved(m_eAchievement.m_sID);
 
         if (m_bFirstTime)
         {

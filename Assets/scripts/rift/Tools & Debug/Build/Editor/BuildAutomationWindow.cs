@@ -959,8 +959,8 @@ public class BuildAutomationWindow : OdinEditorWindow
     {
         // IMPORTANT: PreviewBuildName is now parseable by GameVersion.tryParse:
         // prefix + major.minor.milestone.commit(optionalTag)
-        string prefabPath = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(DataManager.Instance.gameObject);
-        DataManager oDataManagerPrefab = PrefabUtility.LoadPrefabContents(prefabPath).GetComponent<DataManager>();
+        string prefabPath = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(SaveManager.Instance.gameObject);
+        SaveManager oDataManagerPrefab = PrefabUtility.LoadPrefabContents(prefabPath).GetComponent<SaveManager>();
         Undo.RecordObject(oDataManagerPrefab, "Update Build Version");
         //oDataManagerPrefab.CurrentVersion = PreviewBuildName;
 

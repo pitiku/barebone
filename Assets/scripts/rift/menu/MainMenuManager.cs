@@ -27,7 +27,6 @@ public class MainMenuManager : SceneSingleton<MainMenuManager>
     [FoldoutGroup("Settings")] public Slider m_qualityLevel;
     [FoldoutGroup("Settings")] public Toggle m_oVSync;
     [FoldoutGroup("Settings")] public Toggle m_oShake;
-    [FoldoutGroup("Settings")] public Slider m_oAnalyticsSlider;
 
     [FoldoutGroup("Settings")] public GameObject m_oDifficultyButtonsContainer;
 

@@ -17,7 +17,7 @@ public class LanguageSlider : SliderPlus
         for (int index = 0; index < texts.Length; ++index)
         {
             texts[index] = Localization.getLanguageName(m_asLanguages[index]);
-            if (m_asLanguages[index] == DataManager.SaveDataOptions.m_sLanguageCode)
+            if (m_asLanguages[index] == SaveManager.SaveData.m_sLanguageCode)
             {
                 selectedIndex = index;
             }
@@ -40,6 +40,6 @@ public class LanguageSlider : SliderPlus
 
         int index = (int)slider.value;
         Localization.setLanguage(m_asLanguages[index]);
-        DataManager.SaveDataOptions.m_sLanguageCode = m_asLanguages[index];
+        SaveManager.SaveData.m_sLanguageCode = m_asLanguages[index];
     }
 }

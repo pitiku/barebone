@@ -34,7 +34,7 @@ public class Achievement : ScriptableObject
 
             if (!isCompleted())
             {
-                DataManager.SaveDataProgression.m_asAchievementsCompleted.Add(m_sID);
+                SaveManager.SaveData.m_asAchievementsCompleted.Add(m_sID);
                 AchievementsManager.Instance.queueAchievement(this);
             }
         }
@@ -42,7 +42,7 @@ public class Achievement : ScriptableObject
 
     public bool isCompleted()
     {
-        return DataManager.SaveDataProgression.m_asAchievementsCompleted.Contains(m_sID);
+        return SaveManager.SaveData.m_asAchievementsCompleted.Contains(m_sID);
     }
 
     public bool isUnlocked()

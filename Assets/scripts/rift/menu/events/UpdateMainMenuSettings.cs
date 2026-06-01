@@ -26,11 +26,11 @@ public class UpdateMainMenuSettings : SequentialBehavior
         m_oMainMenuManager.m_oMainMenuObj.SetActive(false);
 
         // Set Sliders
-        m_oMainMenuManager.m_musicSlider.value = DataManager.SaveDataOptions.m_fMusicVolume * 10;
-        m_oMainMenuManager.m_soundSlider.value = DataManager.SaveDataOptions.m_fFXVolume * 10;
+        m_oMainMenuManager.m_musicSlider.value = SaveManager.SaveData.m_fMusicVolume * 10;
+        m_oMainMenuManager.m_soundSlider.value = SaveManager.SaveData.m_fFXVolume * 10;
 
         // Shake
-        m_oMainMenuManager.m_oShake.SetIsOnWithoutNotify(DataManager.SaveDataOptions.m_bShake);
+        m_oMainMenuManager.m_oShake.SetIsOnWithoutNotify(SaveManager.SaveData.m_bShake);
 
         // Add listeners
         m_oMainMenuManager.m_oShake.onValueChanged.AddListener(setShake);
@@ -62,11 +62,10 @@ public class UpdateMainMenuSettings : SequentialBehavior
         m_oMainMenuManager.m_oShake.onValueChanged.RemoveListener(setShake);
         m_oMainMenuManager.m_musicSlider.onValueChanged.RemoveListener(setMusicVolume);
         m_oMainMenuManager.m_soundSlider.onValueChanged.RemoveListener(setSoundVolume);
-        m_oMainMenuManager.m_oAnalyticsSlider.onValueChanged.RemoveListener(setAnalytics);
 
         m_oMainMenuManager.m_oOptionsScreen.SetActive(false);
         m_oMainMenuManager.m_oMainMenuObj.SetActive(true);
-        DataManager.Instance.saveGame(true, false);
+        SaveManager.Instance.saveGame();
 
 #if UNITY_EDITOR || UNITY_STANDALONE
         exitWindows();
@@ -85,39 +84,27 @@ public class UpdateMainMenuSettings : SequentialBehavior
         GameOptionsManager.Instance.setSoundVolume(value * 0.1f);
     }
 
-    void setAnalytics(float _fValue)
-    {
-        DataManager.SaveDataOptions.m_bSendAnalyticsData = _fValue > 0.5;
-    }
-
-
     void setShake(bool _bValue)
     {
-        DataManager.SaveDataOptions.m_bShake = _bValue;
+        SaveManager.SaveData.m_bShake = _bValue;
     }
 
 #if UNITY_EDITOR || UNITY_STANDALONE
     private void activateWindows()
     {
         // Set Variables
-        m_bFullScreen = DataManager.SaveDataOptions.m_bFullscreen;
-        m_iQuality = DataManager.SaveDataOptions.m_iQualityLevel;
-        //m_iResoutionIndex = GameOptionsManager.Instance.m_oResolutionManager.getResolutionIndex();
-        m_bVSync = DataManager.SaveDataOptions.m_bVSync;
-
-        // analytics
-        m_oMainMenuManager.m_oAnalyticsSlider.value = DataManager.SaveDataOptions.m_bSendAnalyticsData ? 1 : 0;
+        m_bFullScreen = SaveManager.SaveData.m_bFullscreen;
+        m_iQuality = SaveManager.SaveData.m_iQualityLevel;
+        m_bVSync = SaveManager.SaveData.m_bVSync;
 
         // resolution
         m_oMainMenuManager.m_fullscreen.SetIsOnWithoutNotify(m_bFullScreen);
-        //GameOptionsManager.Instance.m_oResolutionManager.m_oFullScreenShotcutPressedEvent += onFullScreenShotcutPressedEvent;
         m_oMainMenuManager.m_qualityLevel.value = m_iQuality;
         m_oMainMenuManager.m_resolutions.value = (float)m_iResoutionIndex;
-        m_oMainMenuManager.m_oVSync.SetIsOnWithoutNotify(DataManager.SaveDataOptions.m_bVSync);
+        m_oMainMenuManager.m_oVSync.SetIsOnWithoutNotify(SaveManager.SaveData.m_bVSync);
 
         // Add listeners
         m_oMainMenuManager.m_oVSync.onValueChanged.AddListener(setVSync);
-        m_oMainMenuManager.m_oAnalyticsSlider.onValueChanged.AddListener(setAnalytics);
         m_oMainMenuManager.m_resolutions.onValueChanged.AddListener(setResolutions);
         m_oMainMenuManager.m_fullscreen.onValueChanged.AddListener(setFullScreen);
         m_oMainMenuManager.m_qualityLevel.onValueChanged.AddListener(setQualityLevel);
@@ -134,7 +121,6 @@ public class UpdateMainMenuSettings : SequentialBehavior
     public override void deactivate()
     {
         base.deactivate();
-        //GameOptionsManager.Instance.m_oResolutionManager.m_oFullScreenShotcutPressedEvent -= onFullScreenShotcutPressedEvent;
     }
 
     private void exitWindows()
@@ -147,7 +133,7 @@ public class UpdateMainMenuSettings : SequentialBehavior
 
     private void onFullScreenShotcutPressedEvent(object sender, EventArgs e)
     {
-        m_bFullScreen = DataManager.SaveDataOptions.m_bFullscreen;
+        m_bFullScreen = SaveManager.SaveData.m_bFullscreen;
         m_oMainMenuManager.m_fullscreen.SetIsOnWithoutNotify(m_bFullScreen);
     }
 
@@ -155,17 +141,12 @@ public class UpdateMainMenuSettings : SequentialBehavior
     {
         bool bScreenOptionsDirtyQuality = m_bScreenOptionsDirtyQuality;
         if (bScreenOptionsDirtyQuality) GameOptionsManager.Instance.setQualityLevel(m_iQuality);
-        //if (m_bScreenOptionsDirtyFullScreen || m_bScreenOptionsDirtyResolutionIndex)
-        //    GameOptionsManager.Instance.m_oResolutionManager.setResolutionIndex(m_iResoutionIndex, m_bFullScreen);
-        //Quality setting may override vsync and FPS limit, so when dirty always set them
         if (bScreenOptionsDirtyQuality || m_bScreenOptionsDirtyVSYNC) GameOptionsManager.Instance.setVSync(m_bVSync);
-        //if (bScreenOptionsDirtyQuality || m_bScreenOptionsDirtyFPS) GameOptionsManager.Instance.m_oFPSLimitManager.setFPS(m_oMainMenuManager.m_oFPSLimit.SelectedIndex);
     }
 
     void setVSync(bool _bValue)
     {
         m_bVSync = _bValue;
-        //MainMenuManager.Instance.m_oFPSLimit.setup(_bValue);
     }
 
     void setQualityLevel(float _fValue)
@@ -190,10 +171,9 @@ public class UpdateMainMenuSettings : SequentialBehavior
         }
     }
 
-    bool m_bScreenOptionsDirtyFPS => (m_bFullScreen != DataManager.SaveDataOptions.m_bFullscreen);
-    bool m_bScreenOptionsDirtyQuality => m_iQuality != DataManager.SaveDataOptions.m_iQualityLevel;
-    bool m_bScreenOptionsDirtyVSYNC => m_bVSync != DataManager.SaveDataOptions.m_bVSync;
-    bool m_bScreenOptionsDirtyFullScreen => m_bFullScreen != DataManager.SaveDataOptions.m_bFullscreen;
-    //bool m_bScreenOptionsDirtyResolutionIndex => m_iResoutionIndex != GameOptionsManager.Instance.m_oResolutionManager.getResolutionIndex();
+    bool m_bScreenOptionsDirtyFPS => (m_bFullScreen != SaveManager.SaveData.m_bFullscreen);
+    bool m_bScreenOptionsDirtyQuality => m_iQuality != SaveManager.SaveData.m_iQualityLevel;
+    bool m_bScreenOptionsDirtyVSYNC => m_bVSync != SaveManager.SaveData.m_bVSync;
+    bool m_bScreenOptionsDirtyFullScreen => m_bFullScreen != SaveManager.SaveData.m_bFullscreen;
 #endif
 }

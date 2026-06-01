@@ -106,7 +106,7 @@ public class LoadingManager : StateMachineSingleton<LoadingManager>
 #if UNITY_XBOXONE
         return !XboxOneManager.Instance.HasUser() || DataManager.Instance.IsLoadDone();
 #else
-        return DataManager.Instance.IsLoadDone();
+        return SaveManager.Instance.isLoadDone();
 #endif
     }
 

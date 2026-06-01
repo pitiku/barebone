@@ -135,7 +135,7 @@ public class PCManager : PlatformManagerSingleton<PCManager>
     string getOldSavedGameFolder()
     {
         string sFolderMyGames = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).Replace("\\", "/") + "/My Games/";
-        string sSavedGameFolder = sFolderMyGames + DataManager.FOLDERNAME + "/";
+        string sSavedGameFolder = sFolderMyGames + SaveManager.FOLDERNAME + "/";
 
 #if UNITY_STANDALONE && !DISABLESTEAMWORKS
         sSavedGameFolder += Steamworks.SteamUser.GetSteamID().ToString() + "/";

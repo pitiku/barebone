@@ -1,19 +1,11 @@
 using Sirenix.OdinInspector;
 using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using UnityEngine;
 
-public interface ISave
-{
-    public string Version { get; set; }
-
-    public void initialize();
-    public void prepareSave();
-    public void load();
-}
-
 [Serializable]
-public class SaveDataOptions : AutoSerializableData, ISave
+public class SaveData : AutoSerializableData
 {
     public string m_sVersion;
 
@@ -35,14 +27,13 @@ public class SaveDataOptions : AutoSerializableData, ISave
     [FoldoutGroup("Options")] public bool m_bVSync = false;
 #endif
 
-    [FoldoutGroup("Other")] public bool m_bSendAnalyticsData = true;
-
-    public int m_iCurrentSlot = 0;
+    public int m_iDifficulty = 0;
+    public List<string> m_asAchievementsCompleted = new List<string>();
     #endregion
 
     #region Basic
-    public SaveDataOptions() { }
-    public SaveDataOptions(SerializationInfo info, StreamingContext ctxt) : base(info, ctxt) { }
+    public SaveData() { }
+    public SaveData(SerializationInfo info, StreamingContext ctxt) : base(info, ctxt) { }
 
     public string Version { get => m_sVersion; set => m_sVersion = value; }
 
@@ -59,11 +50,6 @@ public class SaveDataOptions : AutoSerializableData, ISave
     public void load()
     {
         GameOptionsManager.Instance.applyOptions();
-    }
-
-    public void prepareSave()
-    {
-        m_sVersion = DataManager.CurrentVersion;
     }
 
     void checkSystemLanguage()
